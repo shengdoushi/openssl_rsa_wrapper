@@ -90,7 +90,7 @@ int gh_rsa_decrypt_public_key(GhRSA* rsa, const unsigned char* from, int from_le
     return gh_rsa_decrypt(GhRSAKeyType_PublicKey, rsa, from, from_len, to, padding_type);
 }
 int gh_rsa_decrypt_private_key(GhRSA* rsa, const unsigned char* from, int from_len, unsigned char* to, enum enGhPaddinType padding_type) {
-    return gh_rsa_decrypt(GhRSAKeyType_PublicKey, rsa, from, from_len, to, padding_type);
+    return gh_rsa_decrypt(GhRSAKeyType_PrivateKey, rsa, from, from_len, to, padding_type);
 }
 
 //
